@@ -1,13 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ShortenUrlComponent } from './features/shorten-url/shorten-url.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [ShortenUrlComponent],
+  template: `<app-shorten-url></app-shorten-url>`
 })
-export class AppComponent {
-  title = 'url-shortener-ui';
-}
+export class AppComponent {}
